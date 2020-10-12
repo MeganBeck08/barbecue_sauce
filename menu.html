@@ -3,39 +3,82 @@
 <head>
 <meta charset="utf-8">
 <title>Menu</title>
+<!-- This says our CSS is compatible with phones, and phones
+         don't need to scale it strangely. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Main CSS styles for Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <style>
-	ul {
-	border: 5px solid #fba3a3;
-	background-color;
-	}
-</style>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #fba3a3;
+}
+      .mycolor {
+        background-color: #fba3a3;
+        border-style: solid;
+        border-width: 1px;
+      }
+      .container {
+        background-color: #ffd3d3;
+        border-style: solid;
+        border-width: 1px;
+      }
+      .odd {
+        font-size: 12px;
+      }
+     h2 {
+     	font-size: 20px;
+     }
+    </style>
 </head>
 
 <body>
+
+	<div class="container"
     <header>
       <!-- Nav section -->
-       <nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
         <ul>
           <li>
-            <a href="index.html">Home Page</a>
+            <a class="navbar-brand" href="index.html">Home Page</a>
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
           </li>
 
-          <li>
-            <a href="menu.html">Menu</a>
+          <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="menu.html">Menu <span class="sr-only">(current)</span></a>
           </li>
-          <li>
-    	    <a href="original_sauce.html">Original sauce</a></li>
-          <li>
-            <a href="bigjoesbigpepper.html">Big Joe's Big Pepper Sauce</a>
+
+          <li class="nav-item">
+    	    <a class="nav-link" href="original_sauce.html">Original sauce</a></li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="bigjoesbigpepper.html">Big Joe's Big Pepper Sauce</a>
           </li>
-          <li>
-            <a href="bigjoesfeelgoodsauce.html">Big Joe's Feel Good Sauce</a>
+
+          <li class="nav-item">
+            <a class="nav-link" href="bigjoesfeelgoodsauce.html">Big Joe's Feel Good Sauce</a>
           </li>
-          <li>
-            <a href="nutrition_facts.html">Nutrition Facts</a>
+
+          <li class="nav-item">
+            <a class="nav-link" href="nutrition_facts.html">Nutrition Facts</a>
           </li>
         </ul>
+    </div>
       </nav>
       </header>
 
@@ -43,50 +86,59 @@
 
 <h1 style="text-align: center;font-size: 30px;">MENU</h1>
 
-<h2>STARTERS</h2>
-<ul>
-	<li>Nachos $12</li>
-	<li>Onion Rings $8</li>
-	<li>Chips and Queso $8</li>
-	<li>Quesadillas $10</li>
-</ul>
-<h2>ENTREES</h2>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">WHAT'S ON THE MENU!
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Starters</th>
+      <td>Nachos $12</td>
+      <td>Onion Rings $8</td>
+      <td>Chips and Queso $8</td>
+      <td>Quesadillas $10</td>
+    </tr>
+    <tr>
+      <th scope="row">Entrees</th>
+      <td>Full Slab $25</td>
+      <td>Half Slab $18</td>
+      <td>BBQ Sandwich $10</td>
+      <td>Chicken Sandwich $9</td>
+    </tr>
+    <tr>
+      <th scope="row">Sides</th>
+      <td>French Fries</td>
+      <td>Mac and Cheese</td>
+      <td>Fried Pickles ($1)</td>
+      <td>Sweet Potato Fries ($1)</td>
+    </tr>
+    <tr>
+      <th scope="row">Drinks</th>
+      <td>Water</td>
+      <td>Coke Products</td>
+      <td>Lemonade</td>
+      <td>Iced Tea</td>
+    </tr>
+    <tr>
+      <th scope="row">Desserts</th>
+      <td>Chocolate Brownie $6</td>
+      <td>Chocolate Chip Pan Cookie $8</td>
+      <td>Cheesecake $12</td>
+    </tr>
+  </tbody>
+</table>
 <p> *All entrees served with a choice of two sides</p>
-<ul> 
-	<li>Full Slab $25</li>
-	<li>Half Slab $18</li>
-	<li>BBQ Sandwich $10</li>
-	<li>Cheeseburger $8</li>
-	<li>Chicken Sandwich $9</li>
-</ul>
-<h2>SIDES</h2>
-<ul>
-	<li>French Fries</li>
-	<Li>Mashed Potatoes</Li>
-	<li>Mac and Cheese</li>
-	<Li>Fresh Fruit</Li>
-	<li>Steamed Vegetables</li>
-	<li>Fried Pickles (+$1)</li>
-	<li>Sweet Potato Fries (+$1)</li>
-</ul>
-<h2>DRINKS</h2>
-<ul>
-	<li>Water</li>
-	<li>Coke Products</li>
-	<li>Lemonade</li>
-	<li>Iced Tea</li>
-</ul>
-<h2>DESSERTS</h2>
-<p> *All desserts served warm with a scoop of ice cream
-<ul> 
-	<li>Chocolate Brownie $10</li>
-	<li>Chocolate Chip Pan Cookie</li>
-	<li>Cheesecake</li>
-</ul>
+<p> *All desserts served warm with a scoop of ice cream</p>
+
 <footer>
 	<p class="odd"> Copyright 2020 by Big Joe's &copy;</p>
 	<p class= "odd" > Restaurant Number: 123-456-7890</p>
 	<p class="odd"> Restaurant Address: 450 South Main St. Micanopy, FL 78620</p>
 </footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
